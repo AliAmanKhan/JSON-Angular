@@ -1,0 +1,65 @@
+<h1 mat-dialog-title>Cards Data</h1>
+<div mat-dialog-content>
+    {{cardsData|json}}
+    <mat-table [dataSource]="cardsData" class="mat-elevation-z8 table">
+        <ng-container matColumnDef="id">
+          <mat-header-cell class="header" *matHeaderCellDef> Id </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.ID}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="name">
+          <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.Name}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="gender">
+          <mat-header-cell *matHeaderCellDef> Gender </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.Gender}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="class">
+          <mat-header-cell *matHeaderCellDef> Class </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.Class}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="seat">
+          <mat-header-cell *matHeaderCellDef> Seat </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.Seat}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="club">
+          <mat-header-cell *matHeaderCellDef> Club </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.Club}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="persona">
+          <mat-header-cell *matHeaderCellDef> Persona </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.Persona}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="crush">
+          <mat-header-cell *matHeaderCellDef> Crush </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.Crush}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="strength">
+          <mat-header-cell *matHeaderCellDef> Strength </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.Strength}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="hairstyle">
+          <mat-header-cell *matHeaderCellDef> Hairstyle </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.Hairstyle}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="color">
+          <mat-header-cell *matHeaderCellDef> Color </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.Color}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="eyes">
+          <mat-header-cell *matHeaderCellDef> Eyes </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.Eyes}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="info">
+          <mat-header-cell *matHeaderCellDef>
+            <button mat-raised-button (click)="mega()">Info</button>
+          </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.info}} </mat-cell>
+        </ng-container>
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+</div>
