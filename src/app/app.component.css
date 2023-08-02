@@ -6,9 +6,14 @@ mat-cell-id{
 }
 .header{
   background-color: blue;
-  color: white;
+  color: black;
+  height: 4rem;
 }
 .cells{
   background-color: rgb(1, 1, 61);
-  color: white;
+  color: black;
+  height: 4rem;
+}
+.row{
+  color: purple;
 }

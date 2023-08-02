@@ -3,7 +3,7 @@
   
   <ng-container matColumnDef="id">
     <th class="header" mat-header-cell *matHeaderCellDef> ID </th>
-    <td mat-cell *matCellDef="let userDatum"> {{userDatum.id}} </td>
+    <td class="cells" mat-cell *matCellDef="let userDatum"> {{userDatum.id}} </td>
   </ng-container>
 
   <ng-container matColumnDef="name">
@@ -15,10 +15,10 @@
 
   <ng-container matColumnDef="date">
     <th class="header" mat-header-cell *matHeaderCellDef> Date </th>
-    <td mat-cell *matCellDef="let userDatum"> {{userDatum.date}} </td>
+    <td class="cells" mat-cell *matCellDef="let userDatum"> {{userDatum.date}} </td>
   </ng-container>
 
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  <tr class="row" mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
 </div>

@@ -1,17 +1,32 @@
 <mat-card>
-    <h1 class="card-title" mat-dialog-title>Cards Data</h1>
+    <h1 class="card-title" mat-dialog-title>Info About {{cardsData[0]?.Name}}</h1>
 <div class="card-content" mat-dialog-content >
-    
-    <span><h2>Info About {{cardsData[0]?.Name}}</h2></span>
-    <h3>Name: {{cardsData[0]?.Name}}  ID: {{cardsData[0]?.ID}}</h3>
-    <h3>Gender: {{cardsData[0]?.Gender}}  Class: {{cardsData[0]?.Class}}</h3>
-    <h3>Seat: {{cardsData[0]?.Seat}}  Club: {{cardsData[0]?.Club}}</h3>
-    <h3>Persona: {{cardsData[0]?.Persona}}  Crush: {{cardsData[0]?.Crush}}</h3>
-    <h3>Strength: {{cardsData[0]?.Strength}}  Hairstyle: {{cardsData[0]?.Hairstyle}}</h3>
-    <h3>Color: {{cardsData[0]?.Color}}  Eyes: {{cardsData[0]?.Eyes}}</h3>
+    <div class="row">
+        <div class="keys">Name: {{cardsData[0]?.Name}}</div>
+        <div class="keys">ID: {{cardsData[0]?.ID}}</div>
+    </div>
+    <div class="row">
+        <div class="keys">Gender: {{cardsData[0]?.Gender}}</div>
+        <div class="keys">Class: {{cardsData[0]?.Class}}</div>
+    </div>
+    <div class="row">
+        <div class="keys">Seat: {{cardsData[0]?.Seat}}</div>
+        <div class="keys">Club: {{cardsData[0]?.Club}}</div>
+    </div>
+    <div class="row">
+        <div class="keys">Persona: {{cardsData[0]?.Persona}}</div>
+        <div class="keys">Crush: {{cardsData[0]?.Crush}}</div>
+    </div>
+    <div class="row">
+        <div class="keys">Strength: {{cardsData[0]?.Strength}}</div>
+        <div class="keys">Hairstyle: {{cardsData[0]?.Hairstyle}}</div>
+    </div>
+    <div class="row">
+        <div class="keys">Color: {{cardsData[0]?.Color}}</div>
+        <div class="keys">Eyes: {{cardsData[0]?.Eyes}}</div>
+    </div>
     <h3>Info: {{cardsData[0]?.Info}}</h3>
     <!-- {{cardsData|json}} -->
-    
 </div>
 <div class="card-actions" mat-dialog-actions>
   <button mat-button mat-dialog-close>Close</button>
