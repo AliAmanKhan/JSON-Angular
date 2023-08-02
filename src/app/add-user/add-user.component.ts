@@ -8,12 +8,12 @@ import { MatDialogRef } from '@angular/material/dialog';
   selector: 'app-add-user',
   templateUrl: './add-user.component.html',
   styleUrls: ['./add-user.component.css'],
-  template: 'passed in {{ data.name }}'
+  template: 'passed in {{ cardsData.Name }}'
 })
 
 export class AddUserComponent {
 
-  data: any
+  data: any;
   displayedColumns: string[] = ['id', 'name', 'gender', 'class', 'seat', 'club', 'persona', 'crush', 'strength', 'hairstyle', 'color', 'eyes', 'info'];
   constructor(private dialogRef: MatDialogRef<AddUserComponent>,
     @Inject(MAT_DIALOG_DATA) public cardsData: any) {

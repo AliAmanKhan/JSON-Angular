@@ -2,8 +2,15 @@
     <h1 class="card-title" mat-dialog-title>Cards Data</h1>
 <div class="card-content" mat-dialog-content >
     
-    {{cardsData|json}}
-    
+    <span><h2>Info About {{cardsData[0]?.Name}}</h2></span>
+    <h3>Name: {{cardsData[0]?.Name}}  ID: {{cardsData[0]?.ID}}</h3>
+    <h3>Gender: {{cardsData[0]?.Gender}}  Class: {{cardsData[0]?.Class}}</h3>
+    <h3>Seat: {{cardsData[0]?.Seat}}  Club: {{cardsData[0]?.Club}}</h3>
+    <h3>Persona: {{cardsData[0]?.Persona}}  Crush: {{cardsData[0]?.Crush}}</h3>
+    <h3>Strength: {{cardsData[0]?.Strength}}  Hairstyle: {{cardsData[0]?.Hairstyle}}</h3>
+    <h3>Color: {{cardsData[0]?.Color}}  Eyes: {{cardsData[0]?.Eyes}}</h3>
+    <h3>Info: {{cardsData[0]?.Info}}</h3>
+    <!-- {{cardsData|json}} -->
     <!-- <mat-table [dataSource]="cardsData" class="mat-elevation-z8 table">
         <ng-container matColumnDef="id">
           <mat-header-cell class="header" *matHeaderCellDef> Id </mat-header-cell>
