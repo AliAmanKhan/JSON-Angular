@@ -2,19 +2,19 @@
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
   
   <ng-container matColumnDef="id">
-    <th mat-header-cell *matHeaderCellDef> ID </th>
+    <th class="header" mat-header-cell *matHeaderCellDef> ID </th>
     <td mat-cell *matCellDef="let userDatum"> {{userDatum.id}} </td>
   </ng-container>
 
   <ng-container matColumnDef="name">
-    <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
-    <mat-cell *matCellDef="let userDatum">
+    <mat-header-cell class="header" *matHeaderCellDef> Name </mat-header-cell>
+    <mat-cell class="cells" *matCellDef="let userDatum">
       <button mat-raised-button color="primary" (click)="openDialog(userDatum.cards)">{{userDatum.name}}</button>
     </mat-cell>
   </ng-container>
 
   <ng-container matColumnDef="date">
-    <th mat-header-cell *matHeaderCellDef> Date </th>
+    <th class="header" mat-header-cell *matHeaderCellDef> Date </th>
     <td mat-cell *matCellDef="let userDatum"> {{userDatum.date}} </td>
   </ng-container>
 

@@ -1,4 +1,23 @@
-.header{  
+/* .header{  
     color: black;
     background-color:wheat;
+} */
+.card-title{
+    background-color: blue;
+    color: white;
+    padding: 0 0 16px 16px;
+    margin: 0;
+}
+.card-content{
+    background-color: rgb(1, 1, 63);
+    color: white;
+    padding-top: 16px;
+}
+.card-actions{
+    background-color: rgb(1, 1, 83);
+    color: white;
+}
+.card-actions button{
+    background-color: white;
+    color: black;
 }

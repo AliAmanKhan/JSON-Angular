@@ -1,7 +1,10 @@
-<h1 mat-dialog-title>Cards Data</h1>
-<div mat-dialog-content>
+<mat-card>
+    <h1 class="card-title" mat-dialog-title>Cards Data</h1>
+<div class="card-content" mat-dialog-content >
+    
     {{cardsData|json}}
-    <mat-table [dataSource]="cardsData" class="mat-elevation-z8 table">
+    
+    <!-- <mat-table [dataSource]="cardsData" class="mat-elevation-z8 table">
         <ng-container matColumnDef="id">
           <mat-header-cell class="header" *matHeaderCellDef> Id </mat-header-cell>
           <mat-cell *matCellDef="let element"> {{element.ID}} </mat-cell>
@@ -52,14 +55,22 @@
         </ng-container>
         <ng-container matColumnDef="info">
           <mat-header-cell *matHeaderCellDef>
-            <button mat-raised-button (click)="mega()">Info</button>
+            <button mat-raised-button (click)="test()">Info</button>
           </mat-header-cell>
           <mat-cell *matCellDef="let element"> {{element.info}} </mat-cell>
         </ng-container>
         <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
         <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
-    </mat-table>
+    </mat-table> -->
+    <mat-card>
+        
+        
+        <div class="row">
+
+        </div>
+    </mat-card>
 </div>
-<div mat-dialog-actions>
+<div class="card-actions" mat-dialog-actions>
   <button mat-button mat-dialog-close>Close</button>
 </div>
+</mat-card>

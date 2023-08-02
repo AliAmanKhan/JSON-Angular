@@ -1,77 +1,14 @@
-table {
-    width: 60vw;
-    background-color: black;
-  }
-  mat-header-cell{
-    background-color: blue;
-  }
-.mat-column-name{
-  border-left: 1px solid white;
-  height: 4rem;
-  text-align: center;
+table{
+  width: 60vw;
 }
-.mat-mdc-table .mdc-data-table__row {
-  /* height: 52px; */
-  background-color: black;
+mat-cell-id{
+  height: 3rem;
+}
+.header{
+  background-color: blue;
   color: white;
 }
-.mat-mdc-table .mdc-data-table__row:hover {
-  /* height: 52px; */
-  background-color: rgb(1, 1, 59);
-  color: white;
-}
-.mat-mdc-table tbody, .mat-mdc-table tfoot, .mat-mdc-table thead, .mat-mdc-cell, .mat-mdc-footer-cell, .mat-mdc-header-row, .mat-mdc-row, .mat-mdc-footer-row, .mat-mdc-table .mat-mdc-header-cell {
+.cells{
   background-color: rgb(1, 1, 61);
-  /* color: white; */
-}
-.mdc-data-table__pagination-total, .mdc-data-table__pagination-rows-per-page-label, .mdc-data-table__cell {
   color: white;
 }
-.mdc-data-table__cell, .mdc-data-table__header-cell {
-  border-bottom-color: white;
-}
-.mdc-data-table__header-cell {
-  background-color: rgb(1, 1, 61);
-}
-th.mat-mdc-header-cell.mdc-data-table__header-cell.cdk-header-cell.cdk-column-id.mat-column-id{
-  background: rgb(1, 1, 61);
-  color: white;
-}
-mat-header-cell.mat-mdc-header-cell.mdc-data-table__header-cell.cdk-header-cell.cdk-column-name.mat-column-name{
-  background: rgb(1, 1, 61);
-  color: white;
-}
-th.mat-mdc-header-cell.mdc-data-table__header-cell.cdk-header-cell.cdk-column-date.mat-column-date{
-  background: rgb(1, 1, 61);
-  color: white;
-}
-td.mat-mdc-cell.mdc-data-table__cell.cdk-cell.cdk-column-date.mat-column-date{
-  background: black;
-  color: white;
-}
-mat-cell.mat-mdc-cell.mdc-data-table__cell.cdk-cell.cdk-column-name.mat-column-name{
-  background: black;
-  color: white;
-}
-td.mat-mdc-cell.mdc-data-table__cell.cdk-cell.cdk-column-id.mat-column-id{
-  background: black;
-  color: white;
-}
-mat-header-cell.mat-mdc-header-cell.mdc-data-table__header-cell.cdk-header-cell.cdk-column-class.mat-column-class{
-  background: #000;
-  color: white;
-}
-/* h1#mat-mdc-dialog-title-0 {
-  color: blue;
-  background: black;
-  border: 2px solid blue;
-  margin: 0;
-  padding: 0 0 16px;
-} */
-
-/* .mat-mdc-dialog-content.mdc-dialog__content{
-  background: rgb(1, 1, 61);
-  color: white;
-  border: 2px solid blue;
-  padding-top: 20px;
-} */
