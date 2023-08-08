@@ -5,15 +5,27 @@ mat-cell-id{
   height: 3rem;
 }
 .header{
-  background-color: blue;
-  color: black;
+  background: blue;
+  font-weight: bolder;
+  font-size: larger;
+  color: white;
   height: 4rem;
 }
 .cells{
   background-color: rgb(1, 1, 61);
-  color: black;
+  color: white;
   height: 4rem;
+  border: 1px thin white;
+  border-color: transparent transparent white transparent;
 }
+
 .row{
   color: purple;
 }
+tr.mat-mdc-header-row.mdc-data-table__header-row.cdk-header-row{
+  background: rgb(51, 51, 160);
+  color: white;
+}
+/* tr.mat-mdc-row.mdc-data-table__row.cdk-row.row:nth-child(2){
+  background-color: rgb(70, 70, 227);
+} */
